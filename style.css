@@ -1,0 +1,421 @@
+/* 
+ */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    /* color: #222; */
+}
+
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    /* color: #222; */
+}
+
+h4{
+    font-size: 20px;
+    color: #222;
+}
+
+h6{
+    font-weight: 700px;
+    font-size: 12px;
+}
+
+.section-p1{
+    padding: 40px 80px;
+}
+
+.section-m1{
+    margin: 40px 0;
+}
+
+body{
+    width: 100%;
+}
+
+/* Navbar start here */
+#navbar{
+position: sticky;
+top: 0;    
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 25px 90px;
+background-color: white;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+/* height: 60px; */
+z-index: 999;
+}
+#nav-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-list li{
+    padding: 0 30px;
+}
+#nav-list li a{
+    color: black;
+    transition: 0.2s linear;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+#nav-list li a:hover,
+#nav-list li a.active{
+color: rgb(87, 158, 158);
+border-bottom: 1px solid rgb(87, 158, 158) ;
+}
+
+#mobile{
+    display: none;
+    align-items: center;
+}
+
+#close{
+    display: none;
+}
+/* Navbar end here */
+
+
+/* olympic game container start here */
+#olympic-game-container{   
+    background-image: url(file:///C:/Users/Smart%20Com/Desktop/Olympic%20Website/images/distributive-results-header.png);
+    height: 90vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px 80px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+#olympic-game-container p{
+    padding-top: 20px;
+    font-size: 20px;
+}
+/* olympic game container end here */
+
+
+/* About Game Container start here  */
+
+#about-game-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#about-game-container .about-box{
+    width: 250px;
+    align-items: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid rgb(173, 173, 164);
+    border-radius: 5px;
+}
+
+#about-game-container .about-box:hover{
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);   
+}
+
+#about-game-container .about-box h6{
+    /* display: inline-block; */
+    padding: 9px 8px 6px 8px;
+    font-size: 17px;
+    /* color: white; */
+    line-height: 1;
+    /* background-color: rgb(243, 209, 209); */
+}
+
+.about-box img{
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+ /* About Game Container end here  */
+
+/* game banner start here */
+
+#game-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#game-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-image: url(file:///C:/Users/Smart%20Com/Desktop/Olympic%20Website/images/results.avif);
+    min-width: 580px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#game-banner .banner-box-2{
+    background-image: url(file:///C:/Users/Smart%20Com/Desktop/Olympic%20Website/images/pexels-lumierestudiomx-974501.jpg);
+}
+
+.banner-box h1{
+    color: white;
+    padding: 10px 10px;
+}
+
+button.btn{
+    margin-left: 25px;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 12px 22px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s linear;
+}
+
+#game-banner .banner-box:hover button{
+    background-color: #43f7eb;
+}
+
+/* game banner end here */
+
+
+/* 2nd banner start here */
+
+#banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 80px;
+}
+
+#banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(file:///C:/Users/Smart%20Com/Desktop/Olympic%20Website/images/youtholympicgames.avif);
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#banner .banner-box2{
+    background-image: url(file:///C:/Users/Smart%20Com/Desktop/Olympic%20Website/images/mascots.avif);
+}
+
+#banner .banner-box3{
+    background-image: url(file:///C:/Users/Smart%20Com/Desktop/Olympic%20Website/images/paralympicgames.avif);
+}
+
+
+/* 2nd banner end here */
+
+/* Subscribe banner start here */
+
+#subscribe-banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(file:///C:/Users/Smart%20Com/Desktop/Olympic%20Website/images/blue%20background.jpg);
+    width: 100%;
+    height: 30vh;
+    background-position: center;
+    background-size: cover;
+}
+
+#subscribe-banner h1{
+    color: white;
+    padding: 10px 0;
+}
+
+#subscribe-banner button{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s linear;
+}
+
+#subscribe-banner button:hover{
+    background-color: lightblue;
+    color: white;
+}
+
+/* Subscribe banner end here */
+
+/* footer start here */
+
+footer{
+    padding: 40px 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .footer-col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .footer-logo{
+    margin-bottom: 30px;
+}
+
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px ;
+}
+
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a{
+    font-size: 13px;
+    color: black;
+    margin-bottom: 7px;
+}
+
+footer .install-apps .img-row img{
+    border: 1px solid;
+    border-radius: 8px;
+}
+
+footer .install-apps img{
+    margin: 10px 0 15px 0;
+}
+
+/* footer end here */
+
+
+/* media query start here */
+
+@media (max-width:799px) {
+    #nav-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: white;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s linear;
+    }
+    #nav-list.active{
+        right: 0px;
+    }
+    #nav-list li{
+        margin-bottom: 30px;
+    }
+
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 35px;
+        color: black;
+        font-size: 24px;
+    }
+
+    #olympic-game-container {
+        height: 70vh;
+        padding: 20px 80px;
+        background-position: top 30% right 30%;
+    }
+
+    #about-game-container{
+        justify-content: center;
+        /* padding: 10px 0px; */
+        row-gap: 30px ;
+        column-gap: 20px;
+    }
+
+    #subscribe-banner {
+        height: 20vh;
+       
+    }
+
+    #game-banner .banner-box {
+        min-width: 100%;
+        height: 30vh;
+    }
+    
+    .banner-box{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #banner .banner-box{
+        width: 100%;
+        padding: 10px 80px;
+    }
+}
+
+
+@media (max-width:477px) {
+
+    #navbar{
+        padding: 10px 20px;
+    }
+
+    #subscribe-banner {
+       min-width: 230px;
+        height: 50vh;
+        padding: 0;
+        font-size: 20px;
+    }
+
+    #game-banner .banner-box {
+        height: 40vh;
+        width: 100%;
+        
+    }
+}
+/* media query end here */
+
+
+
